@@ -1,0 +1,134 @@
+@keyframes tick{
+  0%{
+    height: 0px;
+  }
+  1%{
+    height: 60px;
+  }
+  99%{
+    height: 60px
+  }
+  100%{
+    height: 0px;
+  }
+}
+
+
+html{
+  background-color: rgb(4, 118, 163);
+}
+
+
+.start-div{
+    width: 140px;
+    height: 80vh;
+    line-height: 100%;
+    margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.start-button{
+  align-self: center;
+  height: 50px;
+  font-size: 1.2em;
+background: radial-gradient(circle, rgba(0,151,255,1) 0%, rgba(17,58,255,1) 99%, rgba(17,255,252,1) 100%);
+border-radius: 5%;
+color: white;
+}
+
+.quiz-box{
+
+  width: 50%;
+  height: 60vh;
+
+  margin: auto;
+  margin-top:18vh;
+ 
+  
+  display: flex;
+  flex-direction: column;
+
+}
+
+.quiz-question{
+  height: 30%;
+}
+
+.question{
+  color: white;
+  font-size: 1.1em;
+  font-family: Arial;
+  background:  rgb(39, 133, 255);
+  padding: 10px 0;
+  cursor: default;
+}
+
+.quiz-answers{
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+
+
+  justify-content: space-between;
+
+}
+
+.answer{
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+    vertical-align: center;
+}
+
+
+.letter{
+  vertical-align: center;
+  height: 100%;
+  justify-self: center;
+  align-self: center;
+  width: 15%;
+  text-align: center;
+  color: white;
+  font-family: Arial;
+  font-size: 1.3em;
+  background-color: rgb(62, 168, 255);
+  border-radius: 3%;
+  outline: 0px;
+  border: 0px;
+}
+
+.answer-text{
+  width: 85%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  background-color: white;
+  align-self: center;
+  justify-self: center;
+  height: 100%;
+  vertical-align: center;
+  cursor: default;
+}
+
+.tick{
+  display: block;
+  width: 60px;
+  height: 0px;
+  text-align: center;
+  margin: auto;
+  animation-name: tick;
+  animation-duration: 1s;
+  animation-play-state: paused;
+}
+
+.end-p{
+  font-size: Arial;
+  text-align: center;
+  font-size: 1.6em;
+  color:white;
+  margin-top: 40px;
+}
